@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700&display=swap');
+*{
+    font-family: 'Epilogue', sans-serif;
+}
+p, a{
+    font-size: 18px;
+}
+.nav-btn:hover{
+    color: hsl(0, 0%, 0%);
+    border-color: hsl(0, 0%, 0%);
+}
+#login{
+    border: 0px;
+}
+h1{
+    font-weight: 700;
+    font-size: 70px;
+}

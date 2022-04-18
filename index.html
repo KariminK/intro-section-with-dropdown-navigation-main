@@ -5,9 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
-
+  <link rel="stylesheet" href="style.css">
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
@@ -15,21 +16,79 @@
   </style>
 </head>
 <body>
+  <nav class="navbar navbar-expand-sm bg-light navbar-light">
+    <div class="container-fluid">
+      <a href="#" class="navbar-brand mx-4 mt-2 mb-2">
+        <img src="/images/logo.svg" alt="Snap" srcset=" ">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item  mt-1 mb-1 mx-3">
+            <div class="dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                Features
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Todo List</a></li>
+                <li><a class="dropdown-item" href="#">Calendar</a></li>
+                <li><a class="dropdown-item" href="#">Reminders</a></li>
+                <li><a class="dropdown-item" href="#">Planning</a></li>
+              </ul>
+            </div>
+          </li>
+         <li class="nav-item mt-1 mb-1 mx-3">
+          <div class="dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+              Company
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <li><a class="dropdown-item" href="#">History</a></li>
+              <li><a class="dropdown-item" href="#">our team</a></li>
+              <li><a class="dropdown-item" href="#">Blog</a></li>
+            </ul>
+          </div>
+          </li>
+          <li class="nav-item mt-1 mb-1 mx-3">
+            <a class="nav-link" href="#">Careers</a>
+          </li>
+          <li class="nav-item mt-1 mb-1 mx-3">
+            <a class="nav-link" href="#">About</a>
+          </li>
+        </ul>
+        <div class="container-fluid">
+          <ul class="navbar-nav d-flex justify-content-end">
+            <li class="nav-item mx-3 mt-1 mb-2">
+              <button class="btn" id="login">Login</button>
+            </li>
+            <li class="nav-item mx-3 mt-1 mb-2">
+              <button class="btn btn-dark border border-dark border-2" id="register">Register</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
 
-  Features
-  Company
-  Careers
-  About
-
-  Login
-  Register
-
-  Make remote work
-
-  Get your team in sync, no matter your location. Streamline processes, 
-  create team rituals, and watch productivity soar.
-
-  Learn more
+  <main>
+    <div class="container-fluid d-flex">
+      <div class="container">
+        <div class="d-flex justify-content-start flex-column m-5">
+          <h1 class="">Make remote work</h1>
+          <p class="mt-4 mb-5">
+            Get your team in sync, no matter your location. Streamline processes, 
+            create team rituals, and watch productivity soar.
+          </p>
+          <button class="btn btn-dark" style="width:200px;">Learn more</button>
+        </div>
+      </div>
+      <div class="container d-none d-sm-block" >
+        <img src="/images/image-hero-desktop.png" alt="" srcset="" style="width: 650px;">
+      </div>
+    </div>
+  </main>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
