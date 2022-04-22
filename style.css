@@ -3,9 +3,6 @@
     font-family: 'Epilogue', sans-serif;
     color: hsl(0, 0%, 8%);
 }
-body{
-    overflow: hidden;
-}
 h1{
     font-weight: 700;
     font-size: 60px;
@@ -22,7 +19,7 @@ h1{
 }
 .MRW-Container{
     margin-right: 100px;
-    max-width: 500px;
+    max-width: 700px;
 }
 #lrnmore-btn{
     width: 130px;
@@ -35,7 +32,7 @@ h1{
     margin-bottom: 100px
 }
 .img-main{
-    width: 350px;
+    max-width: 500px;
 }
 .img-main-cont{
     margin-left: auto;
